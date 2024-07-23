@@ -25,9 +25,20 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+
+  .section-heading{
+    font-size: 1.5rem;
+  line-height: 40px;
+  font-family: "Tomato-Grotesk-Regular", "Verdana", sans-serif, "ui-sans-serif",
+    "system-ui", "-apple-system";
+  font-weight: 550;
+  }
   
 
   /* header */
+  .header{
+    padding-bottom: 2rem;
+  }
   .header__top{
     font-size: 2.3rem;
   line-height: 40px;
@@ -55,4 +66,45 @@ padding-bottom: 2rem;
   a:visited{
     color: black;
     cursor: pointer;
+  }
+
+  /* cards */
+
+  .feature-card-container{
+  display: grid;
+  flex-wrap: wrap;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  font-family:"Inter-Regular", "Arial", sans-serif, "ui-sans-serif", "system-ui", "-apple-system", sans-serif, 'Roboto';
+  }
+
+.feature-card{
+  display: grid;
+  height: 150px;
+  border: 1px solid hsl(0, 0%, 89%);
+  border-radius: 1rem;
+  color: inherit;
+  align-items: center;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 100%;
+  width: 100%;
+vertical-align: middle;
+}
+
+  .feature-card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  }
+
+  .feature-card-icon{
+    background-color: #e8fedf;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .feature-card-left{
+    margin: 1rem;
+    justify-self: start;
   }
