@@ -18,6 +18,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  body{
+    
+  }
   
   p {
     margin-block-start: 1em;
@@ -80,16 +84,13 @@ padding-bottom: 2rem;
   }
 
 .feature-card{
-  display: grid;
-  height: 150px;
+  display: flex;
+  min-height: 190px;
+  max-height: 250px;
   border: 1px solid hsl(0, 0%, 89%);
   border-radius: 1rem;
   color: inherit;
-  align-items: center;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 100%;
   width: 100%;
-vertical-align: middle;
 }
 
   .feature-card:hover{
@@ -104,7 +105,41 @@ vertical-align: middle;
     padding: 0.5rem;
   }
 
-  .feature-card-left{
+  .feature-card__left{
     margin: 1rem;
-    justify-self: start;
   }
+  .feature-card__right{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+  }
+
+  .feature-card__text{
+    color: #696969;
+    font-size: 1rem;
+  }
+
+  .feature-card__heading{
+margin-bottom: 0;  
+}
+
+.feature-card__button{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Roboto-Medium", "system-ui", "-apple-system", sans-serif,
+    "Inter-SemiBold", "Arial", "ui-sans-serif", "system-ui", "-apple-system";
+  line-height: 1.5rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 1rem;
+}
+
+.feature-card__button:hover{
+  cursor: pointer;
+  background-color: #212020;
+}
