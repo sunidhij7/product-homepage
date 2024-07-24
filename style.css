@@ -256,7 +256,7 @@ background-color: white;
 }
 
 .row-container-left{
-  flex-grow: 40;
+  flex-grow: 50;
   margin-left: 1rem;
   font-weight: 600;
 }
@@ -285,4 +285,11 @@ font-weight: 500;
 .table-date{
   font-size: 0.8rem;
   color: #696969;
+}
+.red-tag{
+background-color: #ffd6db;
+}
+
+.green-tag{
+  background-color: #e8fedf;
 }
