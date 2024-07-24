@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Tomato-Grotesk-Regular", "Verdana", sans-serif, "ui-sans-serif",
     "system-ui", "-apple-system";
+
   }
   
   html, body {
@@ -117,7 +118,7 @@ padding-bottom: 2rem;
 margin-bottom: 0;  
 }
 
-.feature-card__button{
+.black-button{
   background-color: black;
   color: white;
   text-align: center;
@@ -131,7 +132,7 @@ margin-bottom: 0;
   border-radius: 1rem;
 }
 
-.feature-card__button:hover{
+.black-button:hover{
   cursor: pointer;
   background-color: #212020;
 }
@@ -292,4 +293,11 @@ background-color: #ffd6db;
 
 .green-tag{
   background-color: #e8fedf;
+}
+
+.last-section{
+  padding: 1rem;
+  padding-top: 0;
+  padding-right: 40%;
+  line-height: 1rem;
 }
