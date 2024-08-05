@@ -446,3 +446,67 @@ li:hover{
   background-color: hsl(244, 70%, 96.1%);
   border-radius: 1rem;
 }
+
+/* Modal */
+.modal__background-panel {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(125, 147, 116, 0.5);
+}
+
+.modal__background-panel__foreground-panel {
+  border: none;
+  border-radius: 1rem;
+  background-color: #fefefe;
+  box-shadow: 0 10px 16px -8px rgba(28, 28, 28, 0.3);
+
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.modal__background-panel__foreground-panel--close-trigger:hover {
+  cursor: pointer;
+}
+
+
+.modal__trigger-button:hover{
+  cursor: pointer;
+  background-color: hsl(244, 70%, 96.1%);
+  background-color: #212020;
+}
+
+.modal-panel-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-panel-header__close-trigger{
+  background-color: white;
+  border: none;
+}
+
+.modal-panel-header__close-trigger:hover{
+  cursor: pointer;
+  background-color:rgb(226, 224, 224);
+  border: none;
+  border-radius: 1rem;
+}
+
+.modal-panel-header__title{
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.modal__background-panel__foreground-panel__text{
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}

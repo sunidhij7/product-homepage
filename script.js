@@ -88,3 +88,28 @@ const dropdownOpenTrigger = document.querySelector(
       }
     }
   };
+
+//   modal
+const openBtns = document.querySelectorAll(".modal__trigger-button");
+const modals = document.querySelectorAll(".modal__background-panel");
+const closeBtns = document.querySelectorAll(".modal-panel-header__close-trigger");
+
+openBtns.forEach((openBtn, index) => {
+  openBtn.onclick = function () {
+    modals[index].style.display = "block";
+  };
+});
+
+closeBtns.forEach((closeBtn, index) => {
+  closeBtn.onclick = () => {
+    modals[index].style.display = "none";
+  };
+});
+
+window.onclick = function (event) {
+  modals.forEach((modal) => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+};
